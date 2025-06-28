@@ -1,577 +1,470 @@
 <!DOCTYPE html>
-<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    
-    <!--字符编码-->
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <!--语言-->
-    <meta http-equiv="Content-Language" contect="zh-CN">
-    <!--移动端适配-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--标题-->
-    <title>乔磊的个人简历</title>
-    <!--关键词-->
-    <meta name="keywords" content="乔磊,砂岩弥云,个人主页,简历,qiaolei，乔磊的个人简历">
-    <!--描述-->
-    <meta name="description" content="乔磊的个人简历">
-    <!--作者 author-->
-    <meta name="author" content="乔磊,sagamiyunwork@gmail.com">
+<!--字符编码-->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<!--语言-->
+<meta http-equiv="Content-Language" contect="zh-CN">
+<!--移动端适配-->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!--标题-->
+<title>乔磊的个人简历</title>
+<!--关键词-->
+<meta name="keywords" content="乔磊,砂岩弥云,个人主页,简历,qiaolei，乔磊的个人简历">
+<!--描述-->
+<meta name="description" content="乔磊的个人简历">
+<!--作者 author-->
+<meta name="author" content="乔磊,sagamiyunwork@gmail.com">
 
-    <!--logo-->
-    <link rel="shortcuticon" href="https://sagamiyun.cn/upload/2022/01/16434626349846180b28afb52b27ca38af54a1e8e000f28aa-0efc6062929f46db9b13eacee7b49ce8.jpg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="format-detection" content="email=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="renderer" content="webkit">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Amaze UI">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+<!-- 字体 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="https://sagamiyun.cn/upload/2022/01/16434626349846180b28afb52b27ca38af54a1e8e000f28aa-0efc6062929f46db9b13eacee7b49ce8.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./乔磊_files/typo.css">
-    <link rel="stylesheet" href="./乔磊_files/font-awesome.min.css">
-    <link rel="stylesheet" href="./乔磊_files/index.css">
-    <script src="./乔磊_files/push.js.下载"></script><script charset="utf-8" src="./乔磊_files/UrlChangeTracker.js.下载"></script><script src="./乔磊_files/hm.js.下载"></script><script>
-        function loading2() {
-            document.getElementsByClassName('avatar')[0].style.display = 'block';
-            document.getElementsByClassName('loading')[0].style.display = 'none';
-        }
-    </script>
-	<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+<!--logo-->
+<link rel="shortcut icon" href="https://img.sagamiyun.cn//img/202212170943982.jpg" type="image/x-icon">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- 自定义样式 -->
+<link rel="stylesheet" href="./modern-resume.css">
+
+<style>
+/* 侧边导航栏样式 */
+.sidebar-nav {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 10px;
+}
+
+.sidebar-nav a {
+  display: block;
+  width: 120px;
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: 500;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.sidebar-nav a:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-nav i {
+  margin-right: 5px;
+}
+
+/* 修复头像居中问题 */
+.portrait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent-color);
+  box-shadow: var(--shadow);
+  margin: 0 auto;
+}
+
+.name {
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 1400px) {
+  .sidebar-nav {
+    right: 10px;
+  }
+  
+  .sidebar-nav a {
+    width: 100px;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar-nav {
+    position: static;
+    transform: none;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .sidebar-nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .sidebar-nav li {
+    margin: 0 5px;
+  }
+  
+  .sidebar-nav a {
+    width: auto;
+    padding: 8px 15px;
+  }
+}
+</style>
+
+<script>
+    function loading2() {
+        document.getElementsByClassName('avatar')[0].style.display = 'block';
+        document.getElementsByClassName('loading')[0].style.display = 'none';
+    }
 </script>
-
 </head>
 
 <body>
-
-<header class="header"></header>
+<!-- 侧边导航栏 -->
+<aside class="sidebar-nav">
+  <ul>
+    <li><a href="https://cdn.statically.io/gh/sagamiyun/sagamiyun.github.io/main/sagamiyuncurriculum_vitae.pdf" target="_blank"><i class="fas fa-file-pdf"></i>PDF下载</a></li>
+    <li><a href="https://sagamiyun.me/" target="_blank"><i class="fas fa-blog"></i>个人博客</a></li>
+    <li><a href="print-webresume.html" target="_blank"><i class="fas fa-print"></i>打印版</a></li>
+  </ul>
+</aside>
 
 <article class="container">
-    <section class="side" id="side" >
-
-        <!-- 左栏固定开关，记得及时删除这段代码 Start-->
-        <label class="switch" style="display: none;" onchange="switchFixed()">
-            <script type="text/javaScript">
-                 function switchFixed() {
-                     var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
-                     document.getElementById('side').style.position = value;
-                 }
-             </script>
-            <input id="cb" type="checkbox">
-            <span class="slider round"></span>
-        </label>
-        <style>
-
-            @font-face {
-                font-family: 'FontAwesome';
-                src: url('./乔磊_files/fonts/fontawesome-webfont.eot?v=4.7.0');
-                src: url('./乔磊_files/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('./乔磊_files/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('./乔磊_files/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('./乔磊_files/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('./乔磊_files/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
-                font-weight: normal;
-                font-style: normal;
-            }
-
-            .icon{
-                font-family: FontAwesome;
-            }
-
-            @media (min-width: 750px) {
-                .switch {
-                    position: relative;
-                    display: inline-block !important;
-                    width: 60px;
-                    height: 34px;
-                }
-
-                .switch input {
-                    display: none;
-                }
-
-                .slider {
-                    position: absolute;
-                    cursor: pointer;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    background-color: #ccc;
-                    -webkit-transition: .4s;
-                    transition: .4s;
-                }
-
-                .slider:before {
-                    position: absolute;
-                    content: "";
-                    height: 26px;
-                    width: 26px;
-                    left: 4px;
-                    bottom: 4px;
-                    background-color: white;
-                    -webkit-transition: .4s;
-                    transition: .4s;
-                }
-
-                input:checked + .slider {
-                    background-color: #1abc9c;
-                }
-
-                input:focus + .slider {
-                    box-shadow: 0 0 1px #1abc9c;
-                }
-
-                input:checked + .slider:before {
-                    -webkit-transform: translateX(26px);
-                    -ms-transform: translateX(26px);
-                    transform: translateX(26px);
-                }
-
-                .slider.round {
-                    border-radius: 34px;
-                }
-
-                .slider.round:before {
-                    border-radius: 50%;
-                }
-            }
-        </style>
-        <!-- 左侧固定开关，记得及时删除这段代码 End-->
-
-        <!-- 个人肖像 -->
-        <section class="me">
-            <section class="portrait">
-                <div class="loading" style="display: none;">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <!-- 头像照片 -->
-                <img class="avatar" src="https://img.sagamiyun.cn//img/202212170943982.jpg" onload="loading2()" style="display: block;">
-            </section>
-
-            <h1 class="name">乔磊</h1>
-            <!-- <h4 class="info-job">码农 / 呼和浩特</h4> -->
-
-        </section>
-
-        <!-- 基本信息 -->
-        <section class="profile info-unit">
-            <h2>
-                <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
-            <hr>
-            <ul>
-                <li>
-                    <label>个人信息</label>
-                    <span>乔磊 / 男 / 26岁</span>
-                </li>
-                <li>
-                    <label>日语水平</label>
-                    <span>JLPT N2</span>
-                </li>
-            </ul>
-        </section>
-
-        <!-- 联系方式 -->
-        <section class="contact info-unit">
-            <h2>
-                <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
-            <hr>
-            <ul>
-                <li><label>手机</label><a href="tel:080-5777-7962" target="_blank">080-5777-7962</a></li>
-                <li><label>邮箱：</label><br><a href="mailto:REDACTEDwork@gmail.com" target="_blank">REDACTEDwork@gmail.com</a></li>
-                <li><label>博客：</label><br><a href="https://sagamiyun.me/" target="_blank">sagamiyun.me</a></li>
-                <!-- <li><label>Github:</label><br><a href="https://github.com/sagamiyun" target="_blank">https://github.com/sagamiyun/</a></li> -->
-                <!-- <li><label>Gitee:</label><br><a href="https://gitee.com/sagamiyun/" target="_blank">https://gitee.com/sagamiyun/</a></li> -->
-            </ul>
-        </section>
-
-        <!-- 技能点 -->
-        <!-- 
-        <section class="skill info-unit">
-            <h2>
-                <i class="fa fa-code" aria-hidden="true"></i>技能点</h2>
-            <hr/>
-            <ul>
-                <li>
-                    <label>Java</label>
-                    <progress value="90" max="100"></progress>
-                </li>
-                <li>
-                    <label>SpringBoot</label>
-                    <progress value="85" max="100"></progress>
-                </li>
-                <li>
-                    <label>Mybatis</label>
-                    <progress value="85" max="100"></progress>
-                </li>
-                <li>
-                    <label>JPA</label>
-                    <progress value="85" max="100"></progress>
-                </li>
-                <li>
-                    <label>Thymeleaf</label>
-                    <progress value="70" max="100"></progress>
-                </li>
-                <li>
-                    <label>Vue</label>
-                    <progress value="70" max="100"></progress>
-                </li>
-                <li>
-                    <label>Linux</label>
-                    <progress value="70" max="100"></progress>
-                </li>
-            </ul>
-        </section>
-        -->
-        <!--
-        <section class="qrcode info-unit">
-            <h2><i class="fa fa-qrcode" aria-hidden="true"></i>微信</h2>
-            <hr>
-            <img src="./乔磊_files/wx.png" style="width: 100%;" alt="微信二维码">
-
-        </section>
-        -->
-        <!--
-        <section class="qrcode info-unit">
-            <h2><i class="fa fa-qrcode" aria-hidden="true"></i>微信小程序</h2>
-            <hr>
-            <img src="./乔磊_files/wx2.jpg" style="width: 100%;" alt="微信小程序">
-        </section>
-        -->
-        <section class="qrcode info-unit">
-            <!--        <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
-                    <hr/>
-                    <img src="/assets/images/blog.png" style="width: 100%;" alt="">-->
-        </section>
-
-        <!-- 技术栈 -->
-        <!-- <div class="stack info-unit">
-                <h2><i class="fa fa-code" aria-hidden="true"></i>技术栈</h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <label>前端</label>
-                        <span>JavaScript、TypeScript、jQuery、Vue、React、Bootstrap、NextJS</span>
-                    </li>
-                    <li>
-                        <label>后端</label>
-                        <span>Java、Golang、PHP、Python</span>
-                    </li>
-                    <li>
-                        <label>其他</label>
-                        <span>Linux、Git、Docker、Markdown</span>
-                    </li>
-                </ul>
-            </div> -->
+  <section class="side" id="side" > 
+    
+    <!-- 个人肖像 -->
+    <section class="me">
+        <section class="portrait">
+            <div class="loading" style="display: none;"> <span></span> <span></span> <span></span> <span></span> <span></span> </div>
+            <!-- 头像照片 --> 
+            <img class="avatar" src="https://img.sagamiyun.cn//img/202212170943982.jpg" onload="loading2()" style="display: block;"> </section>
+          <h1 class="name">乔磊</h1>
+          <h4 class="info-job">Java/Golang开发工程师</h4>
+      
+      <!-- 社交媒体链接 -->
+      <div class="social-links">
+        <a href="https://github.com/SagamiYun" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:sagamiyunwork@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://sagamiyun.me/" target="_blank" title="个人博客"><i class="fas fa-globe"></i></a>
+      </div>
     </section>
- 
-    <section class="main">
-
-        <!-- 教育经历 -->
-        <section class="edu info-unit">
-            <h2>
-                <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
-            <hr>
-
-            <ul>
-                <li>
-                    <h3>
-                        <span>内蒙古农业大学 - 计算机网络技术</span>
-                        <time>2020.9-2023.7</time>
-                    </h3>
-                    
-                </li>
-            </ul>
-
-        </section>
-        <br>
-        <section class="edu info-unit">
-            <h2>
-                <i class="fa fa-list-alt" aria-hidden="true"></i>技能清单</h2>
-            <hr>
-                    <ul class="info-content">
-                        <li>计算机基础：了解数据结构、操作系统、计算机网络和计算机组成原理基础知识；</li>
-                        <li>Linux：熟悉Linux下开发环境软件的安装和配置，有Linux下部署SpringBoot，Gin单体项目的经验；</li>
-                        <li>Java：熟练掌握Java基础知识，了解JUC并发等相关原理；</li>
-                        <!-- <li>PHP：熟练掌握PHP基础知识，有使用ThinkPHP开发API的经验，对Laravel框架有一定了解；</li> -->
-                        <li>JavaScript：熟练掌握JS基础事件及语法，熟悉ES6语法规范，有使用过NodeJS开发过API的经验；</li>
-                        <li>Golang：熟练掌握Go基础知识，有使用Gin开发API的经验；</li>
-                        <li>数据库：熟练使用MySQL数据库，了解并掌握MongoDB、Redis等NoSQL；</li>
-                        <li>J2EE：熟练掌握Spring、SpringMVC、Mybatis、Mybatis-Plus、JPA、SpringSecurity、SpringBoot等主流开发框架；</li>
-                        <!-- <li>单元测试：熟练使用Junit，Debug对项目进行调优及检查，对log4j，log4j2的使用有一定了解；</li> -->
-                        <!-- <li>分布式：对SpringCloud、SpringCloudAlibaba的使用有一定的了解；</li> -->
-                        <!-- <li>容器集群及编排：对DockerSwarm、Kubernetes的使用有一定的了解；</li> -->
-                        <li>工具：熟练掌握Git，Docker，Maven，Gradle，NPM，Yarn等开发中常用工具的使用；</li>
-                        <li>前端框架：有使用React，NextJS，Vue2，Vue3开发的实际经验，对TypeScript生态有一定了解；</li>
-                        <!-- <li>移动端开发：了解Kotlin安卓原生开发，对Flutter及React Native框架有一定了解；</li> -->
-                        <!-- <li>渗透测试：对SqlMap、NMAP、Metasploit、BurpSuite的使用有一定了解</li> -->
-                        <li>消息队列：对RabbitMQ，Kafka的使用有一定的了解;</li>
-                    </ul>
-
-        </section>
-
-        <!-- 工作经历 -->
-        <br/>
+    
+    <!-- 基本信息 -->
+    <section class="profile info-unit">
+      <h2> <i class="fas fa-user" aria-hidden="true"></i>基本信息</h2>
+      <hr>
+      <ul>
+        <li>
+          <label>个人信息</label>
+          <span>乔磊 / 男 / 26岁</span> </li>
+        <li>
+          <label>日语水平</label>
+          <span>JLPT N2</span> </li>
+      </ul>
+    </section>
+    
+    <!-- 联系方式 -->
+    <section class="contact info-unit">
+        <h2> <i class="fas fa-address-card" aria-hidden="true"></i>联系方式</h2>
+        <hr>
+        <ul>
+          <li><label><i class="fas fa-phone-alt"></i> 手机</label><a href="tel:08057777962" target="_blank">080-5777-7962</a></li>
+          <li><label><i class="fas fa-envelope"></i> 邮箱</label><a href="mailto:mirakujpmaster@gmail.com" target="_blank">REDACTEDwork@gmail.com</a></li>
+        </ul>
+    </section>
+    
+    <!-- 技能评估 -->
+    <section class="skill info-unit">
+      <h2><i class="fas fa-code" aria-hidden="true"></i>技能评估</h2>
+      <hr/>
+      <ul>
+        <li>
+          <label>Java <span class="skill-level">熟练</span></label>
+          <progress value="85" max="100"></progress>
+        </li>
+        <li>
+          <label>Spring Boot <span class="skill-level">熟练</span></label>
+          <progress value="80" max="100"></progress>
+        </li>
+        <li>
+          <label>Golang <span class="skill-level">熟练</span></label>
+          <progress value="75" max="100"></progress>
+        </li>
+        <li>
+          <label>MySQL <span class="skill-level">熟练</span></label>
+          <progress value="80" max="100"></progress>
+        </li>
+        <li>
+          <label>Redis <span class="skill-level">熟练</span></label>
+          <progress value="75" max="100"></progress>
+        </li>
+      </ul>
+    </section>
+  </section>
+  
+  <section class="main"> 
+    <!-- 个人简介 -->
+    <section class="summary info-unit">
+      <h2> <i class="fas fa-user-circle" aria-hidden="true"></i>个人简介</h2>
+      <hr>
+      <p>
+        拥有扎实的Java和Golang开发经验，熟悉Spring Boot、Spring Cloud等主流框架。目前正在学习人工智能相关技术，希望将AI与软件开发相结合，提升应用智能化水平。热衷于学习新技术，追求编写高质量、可维护的代码。具有良好的团队协作精神和沟通能力，能够高效完成工作任务。
+      </p>
+    </section>
+    
+    <!-- 教育经历 -->
+    <section class="edu info-unit">
+      <h2> <i class="fas fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+      <hr>
+      <ul>
+        <li>
+          <h3> <span>内蒙古农业大学 - 计算机网络技术</span>
+            <time>2020.9-2023.7</time>
+          </h3>
+        </li>
+        <li>
+          <h3> <span>Hawaii Pacific University - 人工智能</span>
+            <time>Online 在读</time>
+          </h3>
+        </li>
+      </ul>
+    </section>
+    
+    <!-- 后端技能清单 -->
+    <section class="skills info-unit">
+      <h2> <i class="fas fa-list-alt" aria-hidden="true"></i>后端技能清单</h2>
+      <hr>
+      <ul class="info-content skill-tags">
+        <li><span class="tag">Java</span></li>
+        <li><span class="tag">Spring Boot</span></li>
+        <li><span class="tag">Spring Cloud</span></li>
+        <li><span class="tag">Golang</span></li>
+        <li><span class="tag">Gin</span></li>
+        <li><span class="tag">MySQL</span></li>
+        <li><span class="tag">Redis</span></li>
+        <li><span class="tag">RabbitMQ</span></li>
+        <li><span class="tag">Docker</span></li>
+        <li><span class="tag">Linux</span></li>
+        <li><span class="tag">Git</span></li>
+      </ul>
+      
+      <div class="skill-details">
+        <div class="skill-item">
+          <h4><i class="fas fa-code-branch"></i> Java 技术体系</h4>
+          <p>熟练使用 Spring Boot、Spring Cloud 微服务架构，有分布式系统开发经验。了解常用中间件如 Redis、RabbitMQ 的应用场景和基本原理。具备 JUC 并发编程基础，能够处理多线程任务。</p>
+        </div>
         
-        <section class="work info-unit">
-            <h2>
-                <i class="fa fa-shopping-bag" aria-hidden="true"></i>工作经历</h2>
-            <hr/>
-            <ul>
-                <li>
-                    <h3>
-                        <span>天津讯雅时空科技有限责任公司</span>
-                        <time>2022.6 至 2022.9</time>
-                    </h3>
-                    <ul class="info-content">
-                        Java开发实习工程师   
-                    </ul>
-                </li>            
-                <li>
-                    <h3>
-                        <span>内蒙古环之宇科技有限责任公司</span>
-                        <time>2023.2 至 2024.6</time>
-                    </h3>
-                    <ul class="info-content">
-                        Java开发工程师  
-                    </ul>
-                </li>          
-                
-            </ul>
-        </section>
-     
-        <!-- 项目经验 -->
-        <br>
-
-        <section class="project info-unit">
-            <h2>
-                <i class="fa fa-terminal" aria-hidden="true"></i>项目经验</h2>
-            <hr>
-            <ul>
-                <li>
-                    <h3>
-                        <span>太阳能报表项目</span>
-                        <time>2023.2-2023.6</time>
-                    </h3>
-                    <ul class="info-content">
-                        <li>技术栈：Java（SpringBoot）、Reportico、SmartReal 数据库</li>
-                        <li>
-                            <i class="fa fa-paper-plane-o" aria-hidden="true">
-                                实现功能
-                            </i>
-                            <ul>
-                                <li>开发能耗趋势报表功能： 显示能耗随时间变化的趋势，帮助识别异常波动和优化空间。</li>
-                                <li>开发能耗占比报表功能： 显示不同能源类型或设备/区域的能耗占比，帮助识别能耗大户。</li>
-                                <li>开发数据清洗和转换功能： 对采集到的数据进行清洗、转换和标准化，例如去除异常值、补全缺失值、单位转换等。</li>
-                                <li>开发 Excel 文件输入工具，在网络应用程序中有效获取多个 Excel 报告，提高数据录入效率，减少人为错误。</li>
-                                <li>研究 SmartReal 数据库文档，解决 SmartReal 数据库不支持本地 JDBC 连接的问题，通过 C 语言读取数据。</li>
-                                <li>研究并验证 C 和 SpringBoot 之间的数据集成方法，克服技术挑战，建立稳定的数据集成基础架构。</li>
-                            </ul>
-                            <br/>
-                            <i class="fa fa-cogs">
-                                应用技术
-                            </i>
-                            <ul>
-                                <li>SpringBoot</li>
-                                <li>Mybatis-Plus</li>
-                                <li>MySQL</li>
-                                <li>React</li>
-                                <li>Axios</li>
-                                <li>SmartReal</li>
-                                <li>Reportico</li>
-                            </ul>
-                            <!-- [功能描述]<br> -->
-                            <br>
-                        </li>
-                        <ul>
-                            <li>负责项目的开发及测试</li>
-                        </ul>
-                        <!-- <li> <i class="fa fa-bars" aria-hidden="true"></i> <mark>“调研-设计-实现-上线”</mark>  <ul>
-                                <li>负责整个项目的全权开发及部署</li>
-                            </ul> -->
-
-                            <!-- 效果 -->
-                            <!-- <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> -->
-                        <!-- </li> -->
-                    </ul>
-                </li>
-                <br> 
-                
-                <li>
-                    <h3>
-                        <span>政府网格项目</span>
-                        <time>2023.5-2023.12</time>
-                    </h3>
-                    <ul class="info-content">
-                        <li>技术栈：Java（SpringBoot）、JavaScript、API 开发</li>
-                        <li>
-                            <i class="fa fa-paper-plane-o" aria-hidden="true">
-                                实现功能
-                            </i>
-                            <ul>
-                                <li>开发房屋/小区管理功能：统计及登录房屋的信息，同时登录房屋内的人口信息</li>
-                                <li>参与开发数据大屏的实现及应用：通过Eachat和数据统计接口的查询，将数据及图表显示在由Geosever的地图可视化</li>
-                                <li>开发网格员流程功能：将WeChatSmallAPP登录的信息，经由流程功能将对应的信息提交网格员审核并提交或回退</li>
-                                <li>开发特殊人口管理功能：负责负责显示及登录管理地区内如犯罪人口，艾滋病人口，管制人口的功能</li>
-                                <li>在前端项目中使用 Cesium，在网络上显示建筑物详细的三维模型，以再现城市地区的真实景象。</li>
-                                <li>开发批量导入应用程序接口，以便有效地将网格管理人员数据注册到系统中。</li>
-                                <li>结合高德地图搜索应用程序接口，实现定期轮询地图数据的功能，以实现近乎实时的地图信息更新。</li>
-                            </ul>
-                            <br/>
-                            <i class="fa fa-cogs">
-                                应用技术
-                            </i>
-                            <ul>
-                                <li>SpringBoot</li>
-                                <li>MyBatis-Plus</li>
-                                <li>React</li>
-                                <li>MySQL</li>
-                                <li>WeChatSmallAPP</li>
-                                <li>GeoSever</li>
-                                <li>Flowable</li>
-                                <li>Cesium</li>
-                            </ul>
-                            <!-- [功能描述]<br> -->
-                            <br>
-                        </li>
-                        <ul>
-                            <li>负责项目的开发及测试</li>
-                        </ul>
-                    </ul>
-                </li>
-
-                <br> 
-
-                <li>
-                    <h3>
-                        <span>综合AI工具整合平台</span>
-                        <time>2023.10-2024.4</time>
-                    </h3>
-                    <ul class="info-content">
-                        <li>技术栈：Golang (Gin)、JavaScript/TypeScript (NextJS)、AITools（Stable Diffusion、ChatGPT、Midjourney）</li>
-                        <li>
-                            <i class="fa fa-paper-plane-o" aria-hidden="true">
-                                实现功能
-                            </i>
-                            <ul>
-                                <li>开发用户余额及令牌余额管理功能：通过管理余额控制及显示用户可用Token</li>
-                                <li>通过Supervisor实现远程 Stable Diffusion 多个实例的监控及管理</li>
-                                <li>开发并构建在线Midjourney图像生成平台</li>
-                                <li>部署整合ChatGPT API 令牌管理和分发平台</li>
-                                <li>使用 GoAdmin 和 NextJS 重建 Stable Diffusion ToC平台多个 API 请求以及并行和阻塞队列功能。</li>
-                                <li>构建全面的人工智能全栈平台，包括 、在线 Midjourney 图像生成平台、NextChat 和 Midjourney Web 应用程序。</li>
-                            </ul>
-                            <br/>
-                            <i class="fa fa-cogs">
-                                应用技术
-                            </i>
-                            <ul>
-                                <li>Gin</li>
-                                <li>Gorm</li>
-                                <li>MySQL</li>
-                                <li>Vue3</li>
-                                <li>Supervisor</li>
-                                <li>NextJS</li>
-                                <li>Stable Diffusion</li>
-                                <li>ChatGPT</li>
-                                <li>Midjourney</li>
-                            </ul>
-                            <!-- [功能描述]<br> -->
-                            <br>
-                        </li>
-                        <ul>
-                            <li>负责项目的开发测试及部署</li>
-                        </ul>
-                    </ul>
-                </li>
-
-                <br> 
-
-                <li>
-                    <h3>
-                        <span>低代码平台开发项目</span>
-                        <time>2024.3-2024.6</time>
-                    </h3>
-                    <ul class="info-content">
-                        <li>技术栈：Java（SpringBoot）、JavaScript/TypeScript（NodeJS）、RabbitMQ</li>
-                        <li>
-                            <i class="fa fa-paper-plane-o" aria-hidden="true">
-                                实现功能
-                            </i>
-                            <ul>
-                                <li>开发基于RabbitMQ实现的消息队列功能：实现消息的发布、订阅和分发</li>
-                                <li>开发设计SpringBoot与NodeJS相互的查询接口及对应的接口安全权限</li>
-                                <li>设计低代码平台的综合界面、部分架构设计、NodeJS 接口集成。</li>
-                                <li>设计NodeJS元数据结构，通过接口的模式暴露给SpringBoot端其ER模型的添加删除的功能</li>
-                                <li>开发NodeJS的基础CRUD接口模板，在ER模型变更之后，即可刷新其查询添加接口，通过匹配通配符的方式将SpringBoot的请求代理到NodeJS端</li>
-                                <li>开发面向用户的Flowable流程设计器及管理功能</li>
-                            </ul>
-                            <br/>
-                            <i class="fa fa-cogs">
-                                应用技术
-                            </i>
-                            <ul>
-                                <li>SpringBoot</li>
-                                <li>MySQL</li>
-                                <li>RabbitMQ</li>
-                                <li>React</li>
-                                <li>Sequelize</li>
-                                <li>Jest</li>
-                                <li>Flowable</li>
-                            </ul>
-                            <!-- [功能描述]<br> -->
-                            <br>
-                        </li>
-                        <ul>
-                            <li>负责项目的开发及测试</li>
-                        </ul>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <!-- <br> -->
-        <!-- 自我评价 -->
-         <!--
-        <section class="work info-unit">
-            <h2>
-                <i class="fa fa-pencil" aria-hidden="true"></i>自我评价/期望</h2>
-            <hr/>
-            <p>
-                <br>
-                <span class="mark-txt">[称号]</span>[什么事情]</p>
-            <br>
-            <span class="mark-txt">[称号]</span>[你做了什么]</p>
-        </section>
+        <div class="skill-item">
+          <h4><i class="fas fa-cubes"></i> Golang 开发</h4>
+          <p>熟悉 Gin 框架开发 API 服务，有使用 WebSocket 实现即时通讯的经验。了解 Golang 并发特性和 goroutine 应用，能够开发高性能的后端服务。</p>
+        </div>
+        
+        <div class="skill-item">
+          <h4><i class="fas fa-database"></i> 数据库应用</h4>
+          <p>熟练使用 MySQL 进行数据库设计和优化，了解基本的索引优化和查询性能调优。熟悉 Redis 缓存应用，能够设计合理的缓存策略提升系统性能。</p>
+        </div>
+        
+        <div class="skill-item">
+          <h4><i class="fas fa-server"></i> 运维与部署</h4>
+          <p>熟悉 Linux 环境下的应用部署，了解 Docker 容器化技术。具备基本的 CI/CD 流程知识，能够使用 Git 进行版本控制和团队协作。</p>
+        </div>
+      </div>
     </section>
-    -->
-</section></article>
-<!-- 侧栏 -->
-<aside>
-    <ul>
+    
+    <!-- 前端与全栈能力 -->
+    <section class="skills info-unit">
+      <h2> <i class="fas fa-list-alt" aria-hidden="true"></i>前端与全栈能力</h2>
+      <hr>
+      <ul class="info-content skill-tags">
+        <li><span class="tag">React</span></li>
+        <li><span class="tag">Vue</span></li>
+        <li><span class="tag">JavaScript</span></li>
+        <li><span class="tag">TypeScript</span></li>
+        <li><span class="tag">HTML/CSS</span></li>
+      </ul>
+      
+      <div class="skill-details">
+        <div class="skill-item">
+          <h4><i class="fas fa-code-branch"></i> React 生态</h4>
+          <p>参与中台管理系统开发，使用 React+TypeScript+Ant Design 构建用户界面，了解组件化开发思想和状态管理方案。</p>
+        </div>
+        
+        <div class="skill-item">
+          <h4><i class="fas fa-cubes"></i> Vue 技术栈</h4>
+          <p>有使用 Vue 开发移动端页面的经验，熟悉 Vue 组件化开发和生命周期，能够实现基本的前端交互功能。</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 工作经历 --> 
+    <section class="work info-unit">
+      <h2> <i class="fas fa-briefcase" aria-hidden="true"></i>工作经历</h2>
+      <hr/>
+      <ul>
         <li>
-            <a href="https://cdn.statically.io/gh/sagamiyun/sagamiyun.github.io/main/sagamiyuncurriculum_vitae.pdf" target="_blank">PDF下载</a>
+          <h3> <span>天津讯雅时空科技有限责任公司</span>
+            <time>2022.6 至 2022.9</time>
+          </h3>
+          <ul class="info-content">
+            <li><strong>Java开发工程师</strong></li>
+          </ul>
         </li>
         <li>
-            <a href="https://sagamiyun.me/" target="_blank">Blog</a>
+          <h3> <span>内蒙古环之宇科技有限责任公司</span>
+            <time>2023.2 至 2024.6</time>
+          </h3>
+          <ul class="info-content">
+            <li><strong>Java高级开发工程师</strong></li>
+          </ul>
         </li>
-    </ul>
-</aside>
- 
-<br>
-<br>
-<br>
+        <li>
+          <h3> <span>日本爱知县Z-SOFT株式会社</span>
+            <time>2025.2 至 2025.6</time>
+          </h3>
+          <ul class="info-content">
+            <li><strong>系统开发工程师</strong></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    
+    <!-- 项目经验 --> 
+    <section class="project info-unit">
+      <h2> <i class="fas fa-project-diagram" aria-hidden="true"></i>项目经验</h2>
+      <hr>
+      <ul>
+        <li>
+          <h3> <span>太阳能报表项目</span>
+            <time>2023.2-2023.6</time>
+          </h3>
+          <ul class="info-content">
+            <li class="project-tech"><strong>技术栈：</strong><span class="tech-tag">Java</span><span class="tech-tag">Spring Boot</span><span class="tech-tag">Reportico</span><span class="tech-tag">SmartReal</span></li>
+            <li><strong>项目描述：</strong>能源数据采集和报表展示系统，用于分析太阳能设备的能耗趋势和效率</li>
+            <li> <i class="fas fa-tasks" aria-hidden="true"></i> <strong>主要贡献</strong>
+              <ul>
+                <li>开发能耗趋势报表功能： 显示能耗随时间变化的趋势，帮助识别异常波动和优化空间</li>
+                <li>开发能耗占比报表功能： 显示不同能源类型或设备/区域的能耗占比，帮助识别能耗大户</li>
+                <li>开发数据清洗和转换功能： 对采集到的数据进行清洗、转换和标准化，例如去除异常值、补全缺失值、单位转换等</li>
+                <li>开发 Excel 文件输入工具，在网络应用程序中有效获取多个 Excel 报告，提高数据录入效率</li>
+                <li>研究 SmartReal 数据库文档，解决 SmartReal 数据库不支持本地 JDBC 连接的问题，通过 C 语言读取数据</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        
+        <li>
+          <h3> <span>政府网格项目</span>
+            <time>2023.5-2023.12</time>
+          </h3>
+          <ul class="info-content">
+            <li class="project-tech"><strong>技术栈：</strong><span class="tech-tag">Java</span><span class="tech-tag">Spring Boot</span><span class="tech-tag">MySQL</span><span class="tech-tag">React</span><span class="tech-tag">GeoServer</span></li>
+            <li><strong>项目描述：</strong>政府网格化管理系统，用于管理社区房屋、人口信息及网格员工作流程</li>
+            <li> <i class="fas fa-tasks" aria-hidden="true"></i> <strong>主要贡献</strong>
+              <ul>
+                <li>开发房屋/小区管理功能：统计及登录房屋的信息，同时登录房屋内的人口信息</li>
+                <li>参与开发数据大屏的实现及应用：通过Eachat和数据统计接口的查询，将数据及图表显示在由Geosever的地图可视化</li>
+                <li>开发网格员流程功能：将WeChatSmallAPP登录的信息，经由流程功能将对应的信息提交网格员审核并提交或回退</li>
+                <li>开发特殊人口管理功能：负责显示及登录管理地区内特殊人群的功能</li>
+                <li>在前端项目中使用 Cesium，在网络上显示建筑物详细的三维模型，以再现城市地区的真实景象</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        
+        <li>
+          <h3> <span>综合AI工具整合平台</span>
+            <time>2023.10-2024.4</time>
+          </h3>
+          <ul class="info-content">
+            <li class="project-tech"><strong>技术栈：</strong><span class="tech-tag">Golang</span><span class="tech-tag">Gin</span><span class="tech-tag">NextJS</span><span class="tech-tag">Stable Diffusion</span><span class="tech-tag">ChatGPT</span></li>
+            <li><strong>项目描述：</strong>AI工具整合平台，集成多种AI服务如图像生成、对话模型等，提供统一的用户界面和管理功能</li>
+            <li> <i class="fas fa-tasks" aria-hidden="true"></i> <strong>主要贡献</strong>
+              <ul>
+                <li>开发用户余额及令牌余额管理功能：通过管理余额控制及显示用户可用Token</li>
+                <li>通过Supervisor实现远程 Stable Diffusion 多个实例的监控及管理</li>
+                <li>开发并构建在线Midjourney图像生成平台</li>
+                <li>部署整合ChatGPT API 令牌管理和分发平台</li>
+                <li>使用 GoAdmin 和 NextJS 重建 Stable Diffusion ToC平台多个 API 请求以及并行和阻塞队列功能</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        
+        <li>
+          <h3> <span>低代码平台开发项目</span>
+            <time>2024.3-2024.6</time>
+          </h3>
+          <ul class="info-content">
+            <li class="project-tech"><strong>技术栈：</strong><span class="tech-tag">Java</span><span class="tech-tag">Spring Boot</span><span class="tech-tag">NodeJS</span><span class="tech-tag">RabbitMQ</span><span class="tech-tag">React</span></li>
+            <li><strong>项目描述：</strong>企业级低代码开发平台，支持通过可视化界面快速构建业务应用，提高开发效率</li>
+            <li> <i class="fas fa-tasks" aria-hidden="true"></i> <strong>主要贡献</strong>
+              <ul>
+                <li>开发基于RabbitMQ实现的消息队列功能：实现消息的发布、订阅和分发</li>
+                <li>开发设计SpringBoot与NodeJS相互的查询接口及对应的接口安全权限</li>
+                <li>设计低代码平台的综合界面、部分架构设计、NodeJS 接口集成</li>
+                <li>设计NodeJS元数据结构，通过接口的模式暴露给SpringBoot端其ER模型的添加删除的功能</li>
+                <li>开发面向用户的Flowable流程设计器及管理功能</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        
+        <li>
+          <h3> <span>在日仿小红书项目『まめログ』</span>
+            <time>2025.3-2025.6</time>
+          </h3>
+          <ul class="info-content">
+            <li class="project-tech"><strong>技术栈：</strong><span class="tech-tag">Golang</span><span class="tech-tag">GoZero</span><span class="tech-tag">Flutter</span><span class="tech-tag">React</span><span class="tech-tag">Kubernetes</span></li>
+            <li><strong>项目描述：</strong>社交媒体平台，类似小红书的内容分享应用，支持视频上传、商城、AI内容推荐等功能</li>
+            <li> <i class="fas fa-tasks" aria-hidden="true"></i> <strong>主要贡献</strong>
+              <ul>
+                <li>开发设计基于分布式架构的视频的上传及下载播放的功能</li>
+                <li>开发商城及支付系统，支持多商品种类的添加</li>
+                <li>基于Ollama及GeminiAPI开发设计对接AI模型及AIAsk的功能</li>
+                <li>实现基础的信息推荐算法，并使用LLM优化推荐内容</li>
+                <li>开发用户聊天系统，实现上线，下线，黑名单，封禁等功能</li>
+                <li>使用K8s实现服务的熔断降级，负载均衡等基础功能</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </section>
+</article>
 
-<script src="./乔磊_files/index.js.下载"></script>
-
-
-</body></html>
+<footer>
+  <p>© 2025 乔磊 | 更新日期: 2025年6月</p>
+</footer>
+</body>
+</html> 
