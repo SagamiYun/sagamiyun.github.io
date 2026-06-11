@@ -407,50 +407,107 @@ footer {
   font-family: 'Courier New', monospace;
 }
 
-/* 响应式设计 */
+/* 响应式设计 — 移动端适配 */
 @media (max-width: 900px) {
   .container {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 0 1rem;
   }
-  
+
   .side {
     position: static;
+    top: auto;
   }
-  
+
+  .me, .profile, .contact, .skill, .info-unit {
+    margin-bottom: 1rem;
+  }
+
   body::before {
     background-size: 15px 15px;
   }
 }
 
 @media (max-width: 600px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
   body {
-    padding: 1rem 0;
+    padding: 0.75rem 0;
   }
-  
+
   .container {
-    padding: 0 1rem;
+    padding: 0 0.85rem;
+    gap: 1rem;
   }
-  
+
+  .me, .profile, .contact, .skill, .info-unit {
+    padding: 1.1rem;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .info-job {
+    font-size: 0.9rem;
+  }
+
+  .main .info-unit h2 {
+    font-size: 1.1rem;
+  }
+
   .main .info-unit h3 {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .main .info-unit h3 time {
     margin-top: 0.25rem;
   }
-  
+
   .skill-tags {
     gap: 0.35rem;
   }
-  
+
   .tag {
     padding: 0.25rem 0.5rem;
     font-size: 0.8rem;
   }
-  
+
+  .tech-tag {
+    font-size: 0.78rem;
+  }
+
+  /* 防止长技术名/URL 撑破布局 */
+  .main, .info-content, .info-unit, .summary p, .info-content li {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
   body::before {
     background-size: 10px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 0 0.6rem;
+  }
+
+  .me, .profile, .contact, .skill, .info-unit {
+    padding: 0.9rem;
+  }
+
+  .name {
+    font-size: 1.35rem;
   }
 }
 
