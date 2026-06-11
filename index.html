@@ -265,8 +265,11 @@
           <li><span class="tag">Kubernetes / k3s</span></li>
           <li><span class="tag">NATS / JetStream</span></li>
           <li><span class="tag">Docker / Kaniko</span></li>
+          <li><span class="tag">Tailscale / Liqo</span></li>
+          <li><span class="tag">nftables / PPPoE</span></li>
           <li><span class="tag">Infisical</span></li>
-          <li><span class="tag">Linux</span></li>
+          <li><span class="tag">systemd / launchd</span></li>
+          <li><span class="tag">Linux (Debian/macOS)</span></li>
           <li><span class="tag">vast.ai GPU</span></li>
         </ul>
       </section>
@@ -384,6 +387,15 @@
             <ul class="info-content">
               <li class="project-tech"><strong>技术栈：</strong><span class="tech-tag">k3s</span><span class="tech-tag">Claude Agent SDK</span><span class="tech-tag">OpenEvolve</span></li>
               <li>k3s CronJob 自主研究流水线（题目→集群内 CC agent 跑 reproduce/gap/experiment→digest→Telegram）；REDACTED 式进化代码搜索（MAP-Elites / 岛屿迁移）跑成 k3s job。</li>
+            </ul>
+          </li>
+          <li>
+            <h3> <span>主权 AI 集群 / 舰队平台工程（SRE）</span>
+              <time>2026 · REDACTED</time>
+            </h3>
+            <ul class="info-content">
+              <li class="project-tech"><strong>技术栈：</strong><span class="tech-tag">k3s</span><span class="tech-tag">Tailscale/Liqo</span><span class="tech-tag">nftables</span><span class="tech-tag">Kaniko</span><span class="tech-tag">Infisical</span></li>
+              <li>在 ThinkPad 上 from-scratch 搭建并运维生产级 k3s 控制面，扩展为 Linux/macOS/WSL 多 OS 异构 agent 舰队；Tailscale + Liqo 跨集群 peering、独立表 nftables（防 kube-proxy 覆盖）、无 docker/root 的 Kaniko 集群内 CI → 本地 registry、Infisical 全 API 自托管密钥；vast.ai 上 QLoRA 训练编排；cc-watchdog 长会话存活看护。</li>
             </ul>
           </li>
           <li>
