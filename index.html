@@ -17,7 +17,7 @@
   <!--描述-->
   <meta name="description" content="乔磊的个人简历">
   <!--作者 author-->
-  <meta name="author" content="乔磊,work@sagamiyun.me">
+  <meta name="author" content="乔磊,me@sagamiyun.me">
 
   <!-- 字体 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -179,7 +179,7 @@
         <!-- 社交媒体链接 -->
         <div class="social-links">
           <a href="https://github.com/SagamiYun" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="mailto:work@sagamiyun.me" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="mailto:me@sagamiyun.me" title="Email"><i class="fas fa-envelope"></i></a>
           <a href="https://sagamiyun.me/" target="_blank" title="个人博客"><i class="fas fa-globe"></i></a>
         </div>
       </section>
@@ -197,10 +197,6 @@
             <label>所在地</label>
             <span>日本 · 东京</span>
           </li>
-          <li>
-            <label>在留资格</label>
-            <span>REDACTED（〜2028.3）</span>
-          </li>
         </ul>
       </section>
 
@@ -209,10 +205,8 @@
         <h2> <i class="fas fa-address-card" aria-hidden="true"></i>联系方式</h2>
         <hr>
         <ul>
-          <li><label><i class="fas fa-phone-alt"></i> 手机</label><a href="tel:REDACTED"
-              target="_blank">REDACTED</a>
-          <li><label><i class="fas fa-envelope"></i> 邮箱</label><a href="mailto:work@sagamiyun.me"
-              target="_blank">work@sagamiyun.me</a></li>
+          <li><label><i class="fas fa-envelope"></i> 邮箱</label><a href="mailto:me@sagamiyun.me"
+              target="_blank">me@sagamiyun.me</a></li>
         </ul>
       </section>
 
@@ -297,11 +291,11 @@
         <hr />
         <ul>
           <li>
-            <h3> <span>REDACTED — 创始人 / 主理工程师</span>
+            <h3> <span>REDACTED — REDACTED / 独立开发</span>
               <time>2026.6 至今</time>
             </h3>
             <ul class="info-content">
-              <li>自建多节点 home k3s 集群运行常驻自主 AI agent 舰队；方向为面向日本市场的主权 · on-prem AI agent 基础设施（可部署性 × 数据驻留 × 边缘推理）。远程 · 东京。</li>
+              <li>独立从事 AI agent 基础设施与边缘 LLM / MoE 推理方向的研究与原型开发（远程 · 东京）；具体项目可面谈。</li>
             </ul>
           </li>
           <li>
@@ -309,7 +303,10 @@
               <time>2026.3 – 2026.6</time>
             </h3>
             <ul class="info-content">
-              <li><strong>系统开发工程师</strong>　〔具体项目 / 技术栈 / 产出 — 待补一两点〕</li>
+              <li><strong>平台 / 基础设施工程师（SRE）</strong></li>
+              <li>From-scratch 搭建并运维生产级 8 节点裸金属 k3s 集群（多控制面 + etcd，58 namespace / 197 deployment / 105 service）；LVM 存储、nftables/PPPoE 网络、Tailscale + Liqo 跨集群联邦；稳定运行 70 天，处理 60+ 次节点/磁盘/网络/GPU 运维事件。</li>
+              <li>自建可观测与 AI 基础设施：Prometheus / Grafana / Loki / Jaeger + Tetragon eBPF；litellm 统一 LLM 网关、Langfuse LLM 可观测、Graphiti 记忆图谱；KEDA 按消息队列自动扩缩、Kaniko 集群内 CI → 本地 registry。</li>
+              <li>vast.ai A100 GPU 云编排（vLLM / Ollama，QLoRA 微调 Gemma4）+ autossh/Tailscale 接入；交付 jp-schedule-hub、jp-esign-forge 等业务系统（dev/e2e/prod 多环境）。</li>
             </ul>
           </li>
           <li>
@@ -344,60 +341,6 @@
         <h2> <i class="fas fa-project-diagram" aria-hidden="true"></i>项目经验</h2>
         <hr>
         <ul>
-          <li>
-            <h3> <span>REDACTED — A2A 消息织物 + 实时 3D 治理可视化</span>
-              <time>2026 · REDACTED</time>
-            </h3>
-            <ul class="info-content">
-              <li class="project-tech"><strong>技术栈：</strong><span class="tech-tag">TypeScript</span><span class="tech-tag">NATS/JetStream</span><span class="tech-tag">Three.js/WebGL</span></li>
-              <li>REDACTED的 agent-to-agent 消息织物（artery/vein/nerve 等 8 条 typed channel）；自研实时 3D 治理控制台，可扩展到上千 agent（workflow 阶段着色、层级 LOD、活体 vitals、细胞凋亡更替）。对标 Dapr Agents / Temporal / LangGraph / A2A 做了竞品与新颖性评估。</li>
-            </ul>
-          </li>
-          <li>
-            <h3> <span>REDACTED — REDACTED</span>
-              <time>2026 · REDACTED</time>
-            </h3>
-            <ul class="info-content">
-              <li class="project-tech"><strong>技术栈：</strong><span class="tech-tag">TypeScript/Node</span><span class="tech-tag">React</span><span class="tech-tag">SQLite</span><span class="tech-tag">Cursor-CLI</span></li>
-              <li>类 Slack 的多 agent 协作平台，数据 100% 本地驻留；实现成员/访客角色、Agent 员工模式、Slack 双向桥接与 OAuth 双层频道可见性，并接入沙箱化访客 ChatBot。</li>
-            </ul>
-          </li>
-          <li>
-            <h3> <span>ana — REDACTED</span>
-              <time>2026 · REDACTED</time>
-            </h3>
-            <ul class="info-content">
-              <li class="project-tech"><strong>技术栈：</strong><span class="tech-tag">Python</span><span class="tech-tag">NATS</span></li>
-              <li>开箱即用的 NATS agent-to-agent 协议 + Python 客户端，作为多节点舰队总线，吞吐 REDACTED；支持身份认证、sender-pinned subject 与策略钩子。</li>
-            </ul>
-          </li>
-          <li>
-            <h3> <span>边缘 LLM / MoE 推理研究</span>
-              <time>2026 · REDACTED</time>
-            </h3>
-            <ul class="info-content">
-              <li class="project-tech"><strong>技术栈：</strong><span class="tech-tag">Python</span><span class="tech-tag">vLLM</span><span class="tech-tag">llama.cpp</span><span class="tech-tag">Gemma/Qwen</span></li>
-              <li>REDACTED（MoE 边缘推理 tok/s laddering）、REDACTED（REDACTED + OTP 掩码 offload）、gemma4 边-云 soft-prompt 路由；复现 Gemma4-26B-A4B（MoE 仅激活 3.8B）在 &lt;$200 旧 Xeon CPU 上可用推理。</li>
-            </ul>
-          </li>
-          <li>
-            <h3> <span>过夜自主研究引擎 + REDACTED</span>
-              <time>2026 · REDACTED</time>
-            </h3>
-            <ul class="info-content">
-              <li class="project-tech"><strong>技术栈：</strong><span class="tech-tag">k3s</span><span class="tech-tag">Claude Agent SDK</span><span class="tech-tag">OpenEvolve</span></li>
-              <li>k3s CronJob 自主研究流水线（题目→集群内 CC agent 跑 reproduce/gap/experiment→digest→Telegram）；REDACTED 式进化代码搜索（MAP-Elites / 岛屿迁移）跑成 k3s job。</li>
-            </ul>
-          </li>
-          <li>
-            <h3> <span>主权 AI 集群 / 舰队平台工程（SRE）</span>
-              <time>2026 · REDACTED</time>
-            </h3>
-            <ul class="info-content">
-              <li class="project-tech"><strong>技术栈：</strong><span class="tech-tag">k3s</span><span class="tech-tag">Tailscale/Liqo</span><span class="tech-tag">nftables</span><span class="tech-tag">Kaniko</span><span class="tech-tag">Infisical</span></li>
-              <li>在 ThinkPad 上 from-scratch 搭建并运维生产级 k3s 控制面，扩展为 Linux/macOS/WSL 多 OS 异构 agent 舰队；Tailscale + Liqo 跨集群 peering、独立表 nftables（防 kube-proxy 覆盖）、无 docker/root 的 Kaniko 集群内 CI → 本地 registry、Infisical 全 API 自托管密钥；vast.ai 上 QLoRA 训练编排；cc-watchdog 长会话存活看护。</li>
-            </ul>
-          </li>
           <li>
             <h3> <span>まめログ — 在日社交内容平台</span>
               <time>2025.3 – 2025.6</time>
